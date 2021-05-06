@@ -20,9 +20,13 @@
     <h1>Hello world!</h1> 
     <p>I already got rid of the curse</p>
     <script>
-        window.alert('My first message.')
-        window.confirm('Are you enjoying JS?') //janela com botão ok e cancelar
-        //window.prompt('What is your name?')
+        let n1 = Number(window.prompt('Type a number:')) //prompt retorna string, então transforma em number permitindo que o próprio JS defina o tipo conforme o que foi recebido. Se quiser forçar um tipo, explicite Number.parseInt por ex
+        let n2 = Number(window.prompt('Type other number:'))
+        var s = n1 + n2
+        window.alert('The value sum is: ' + s) 
+        // (number + number) adição
+        // (string + string) concatenação
+        
     </script>
 </body>
 </html>
