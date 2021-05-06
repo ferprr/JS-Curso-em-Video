@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Learning to use DOM in JS</h2>
+    <p>Here go the <strong>result</strong></p>
+    <p>Second paragraph</p>
+
+    <div id="msg">Click here </div>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.writeln('Is writed: ' + p1.innerText)
+
+        window.document.writeln('But it is showed like this: ' + p1.innerHTML)
+
+        var d = document.getElementById('msg')
+        d.style.background = 'Red'
+
+        // var e = window.document.querySelector('div#msg')
+        // e.style.background = 'Black'
+    </script>
+</body>
+</html>
